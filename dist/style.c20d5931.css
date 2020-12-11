@@ -1,0 +1,185 @@
+iconfont引入图标 .icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+/**
+css-reset
+*/
+* {
+  box-sizing: border-box;
+}
+*:before,
+*.after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* style */
+body {
+  background: #eee;
+}
+.global-header {
+  margin: 20px;
+}
+
+@media (min-width:500px){
+  .global-header{
+    margin: 60px 0;
+  }
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  .search-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.search-form > input {
+  width: 100%;
+  margin-right: 10px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-form > button {
+  white-space: nowrap;
+  padding: 0 28px;
+  border: none;
+  border-radius: 4px;
+  background: #0282b9;
+  color: white;
+  font-size: 16px;
+}
+
+.global-main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sitelist {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  .sitelist {
+    margin-left: 0;
+    margin-right: -25px;
+    /* 在pc的网站里面需要将space-between覆盖掉 */
+    justify-content: flex-start;
+  }
+}
+
+.sitelist > li {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 500px){
+  .sitelist li{
+    margin-right: 25px;
+  }
+}
+.sitelist .site {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.sitelist .site > .logo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+}
+.sitelist .site > .link {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.sitelist .site > .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: none;
+  cursor: default;
+}
+
+.sitelist .site:hover > .close {
+  display: block;
+}
+
+.sitelist .close .icon {
+  width: 25px;
+  height: 25px;
+}
+.sitelist .add-button {
+  border: 1px solid #ddd;
+  background: white;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.sitelist .add-button .icon {
+  width: 56px;
+  height: 56px;
+}
+
+.sitelist .add-button .text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.sitelist .add-button .icon-wrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*# sourceMappingURL=style.c20d5931.css.map */
